@@ -1,17 +1,16 @@
 (function ()
 {
 	var formulario = document.getElementsByName('forRegistro'),
-		elementos = formulario.elements,
 		boton = document.getElementsByName('Ingresar');
 	
-	var validadCorreo = function(e){
+	var validarCorreo = function(e){
 		if(formulario.logCorreo.value == 0){
 			alert("Completa el campo correo");
 			e.preventDefault();
 		}
 	};
 	
-	var validadContraseña = function(e){
+	var validarContraseña = function(e){
 		if(formulario.logContraseña.value == 0){
 			alert("Completa el campo contraseña");
 			e.preventDefault();
