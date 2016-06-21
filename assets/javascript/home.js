@@ -1,17 +1,17 @@
-(function ()
+function funcion()
 {
 	var formulario = document.getElementsByName('forRegistro'),
 		boton = document.getElementsByName('Ingresar');
 	
 	var validarCorreo = function(e){
-		if(formulario.logCorreo.value == 0){
+		if(formulario[0].logCorreo.value == ""){
 			alert("Completa el campo correo");
 			e.preventDefault();
 		}
 	};
 	
-	var validarContraseña = function(e){
-		if(formulario.logContraseña.value == 0){
+	var validarContrasena = function(e){
+		if(formulario[0].logContraseña.value == ""){
 			alert("Completa el campo contraseña");
 			e.preventDefault();
 		}
@@ -34,6 +34,6 @@
 		//validarCheckbox(e);
 	};
 	
-	formulario.addEventListener("submit",validar);
+	formulario[0].addEventListener("submit",validar);
 	
-})
+}
