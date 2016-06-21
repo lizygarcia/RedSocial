@@ -30,7 +30,7 @@ function funcion()
 	
 	var validar = function(e){
 		validarCorreo(e);
-		validarContraseña(e);	
+		validarContrasena(e);	
 		//validarCheckbox(e);
 	};
 	
