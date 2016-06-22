@@ -1,4 +1,4 @@
-function funcion()
+function validarEntrada()
 {
 	var formulario = document.getElementsByName('forRegistro'),
 		boton = document.getElementsByName('Ingresar'),
