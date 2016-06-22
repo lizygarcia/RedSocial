@@ -17,7 +17,7 @@ function funcion()
 			e.preventDefault();
 		}
 		else{
-			if(!carContrasena.test(formulario[0].value)){
+			if(!carContrasena.test(formulario[0].logContrasena.value)){
 				alert("Contraseña no valida");
 				e.preventDefault();
 			}
