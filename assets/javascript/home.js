@@ -1,7 +1,8 @@
 function funcion()
 {
 	var formulario = document.getElementsByName('forRegistro'),
-		boton = document.getElementsByName('Ingresar');
+		boton = document.getElementsByName('Ingresar'),
+		carContrasena = /^([a-zA-Z0-9]{6,20})$/;
 	
 	var validarCorreo = function(e){
 		if(formulario[0].logCorreo.value == ""){
@@ -11,9 +12,16 @@ function funcion()
 	};
 	
 	var validarContrasena = function(e){
-		if(formulario[0].logContraseña.value == ""){
+		if(formulario[0].logContrasena.value == ""){
 			alert("Completa el campo contraseña");
 			e.preventDefault();
+		}
+		else{
+			if(!carContrasena.test(formulario[0].value)){
+				alert("Contraseña no valida");
+				e.preventDefault();
+			}
+		
 		}
 	};
 	
