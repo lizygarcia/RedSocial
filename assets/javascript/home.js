@@ -132,6 +132,7 @@ function validarRegistro()
 			}
 		}
 		
+		validarLasContrasena(e);
 	};
 	
 	var validarLasContrasenas = function(e){
