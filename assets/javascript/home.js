@@ -120,34 +120,17 @@ function validarRegistro()
 		}
 	};
 
-	var validarRptContrasena = function(e){
-		if(formulario[0].regConfirmaContrasena.value == ""){
-			alert("Completa el campo contraseña");
-			e.preventDefault();
-		}
-		else{
-			if(!carContrasena.test(formulario[0].regConfirmaContrasena.value)){
-				alert("Contraseña no valida");
-				e.preventDefault();
-			}
-		}
-		
-		validarLasContrasena(e);
-	};
-	
-	var validarLasContrasenas = function(e){
+	var validarRptContrasena = function(e){			
 		if(formulario[0].regContrasena.value != formulario[0].regConfirmaContrasena.value){
 			alert("Las contraseñas no coinciden");
 			e.preventDefault();
 		}
-
-		
 	};
 	
 	
-	var validadTerCond = function(e)
+	var validarTerCond = function(e)
 	{
-		if(formulario.TerCond.checked == false{
+		if(!formulario[0].TerCond.checked){
 			alert("Debe aceptar los terminos y condiciones");
 			e.preventDefault();
 		}
